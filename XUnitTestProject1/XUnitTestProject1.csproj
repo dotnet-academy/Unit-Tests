@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="2.1.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.7.0" />
+    <PackageReference Include="Moq" Version="4.8.3" />
+    <PackageReference Include="RestEase" Version="1.4.5" />
+    <PackageReference Include="xunit" Version="2.3.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
+    <DotNetCliToolReference Include="dotnet-xunit" Version="2.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+    <ProjectReference Include="..\MoviesApi\MoviesApi.csproj" />
+    <ProjectReference Include="..\MoviesHubNew\MoviesHubNew.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.AspNetCore.Mvc.Abstractions">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.aspnetcore.mvc.abstractions\2.1.0\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.Abstractions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
